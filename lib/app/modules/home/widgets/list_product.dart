@@ -88,13 +88,35 @@ class ItemProduct extends StatelessWidget {
                       ],
                       color: warningColor,
                     ),
-                    child: Text(
-                      "5.0 | 200+ rating",
-                      style: TextStyle(
-                        color: whiteColor,
-                        fontSize: 9,
+                    child: RichText(
+                      textAlign: TextAlign.center,
+                      text: TextSpan(
+                        children: [
+                          WidgetSpan(
+                            alignment: PlaceholderAlignment.middle,
+                            child: Icon(
+                              Icons.star,
+                              size: 10,
+                              color: whiteColor,
+                            ),
+                          ),
+                          TextSpan(
+                            text: " 5.0 | 200+ rating",
+                            style: TextStyle(
+                              fontSize: 9,
+                              color: whiteColor,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
+                    // child: Text(
+                    //   "5.0 | 200+ rating",
+                    //   style: TextStyle(
+                    //     color: whiteColor,
+                    //     fontSize: 9,
+                    //   ),
+                    // ),
                   ),
                 ],
               ),
