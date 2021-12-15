@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:test_ordo/app/modules/ProductDetail/widgets/carousel_products.dart';
 import 'package:test_ordo/app/modules/ProductDetail/widgets/detail_product.dart';
+import 'package:test_ordo/app/routes/app_pages.dart';
 import 'package:test_ordo/app/utils/bottom_navigation_bar.dart';
 import 'package:test_ordo/app/utils/colors.dart';
 
@@ -25,7 +26,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
         backgroundColor: backgroundColor,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () => Get.toNamed(Routes.CHECK_OUT),
             icon: Icon(
               Icons.shopping_bag,
               color: infoColor,
@@ -69,10 +70,10 @@ class ProductDetailView extends GetView<ProductDetailController> {
       body: ListView(
         children: [
           CarouselProducts(imgList: imgList),
-          DetailProduct(),
+          const DetailProduct(),
         ],
       ),
-      bottomNavigationBar: MyBottomNavigationBar(),
+      bottomNavigationBar: const MyBottomNavigationBar(),
     );
   }
 }
