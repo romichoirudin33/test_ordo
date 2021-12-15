@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:test_ordo/app/routes/app_pages.dart';
 import 'package:test_ordo/app/utils/colors.dart';
 
 class ListProducts extends StatelessWidget {
@@ -38,7 +39,7 @@ class ItemProduct extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = Get.mediaQuery.size.width;
     return InkWell(
-      // onTap: () => ,
+      onTap: () => Get.toNamed(Routes.PRODUCT_DETAIL),
       child: Container(
         padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(

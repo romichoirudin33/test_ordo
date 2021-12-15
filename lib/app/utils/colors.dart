@@ -17,7 +17,7 @@ Color primaryColor = const Color(0xFF3C7DD9);
 Color dangerColor = const Color(0xFFFF485A);
 Color dangerBorderColor = const Color(0xFFCC444B);
 Color warningColor = const Color(0xFFDFAE1D);
-Color warningBorderColor = const Color(0xFFE45C3A);
+Color warningBorderColor = const Color(0xFFFA4A0C);
 Color infoColor = const Color(0xFF64A1F4);
 Color infoBorderColor = const Color(0xFF0096C7);
 

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:test_ordo/app/modules/home/widgets/list_product.dart';
 import 'package:test_ordo/app/modules/home/widgets/navbar.dart';
+import 'package:test_ordo/app/utils/bottom_navigation_bar.dart';
 import 'package:test_ordo/app/utils/colors.dart';
 
 import '../controllers/home_controller.dart';
@@ -31,49 +32,7 @@ class HomeView extends GetView<HomeController> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.assignment,
-              color: secondaryText,
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.swap_horiz,
-              color: secondaryText,
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: selectedNavbar,
-            ),
-            label: 'Business',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.assessment,
-              color: secondaryText,
-            ),
-            label: 'School',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline,
-              color: secondaryText,
-            ),
-            label: 'School',
-          ),
-        ],
-        currentIndex: 2,
-        selectedItemColor: selectedNavbar,
-      ),
+      bottomNavigationBar: MyBottomNavigationBar(),
     );
   }
 }
